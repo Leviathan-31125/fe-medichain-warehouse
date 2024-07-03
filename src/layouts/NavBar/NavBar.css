@@ -1,0 +1,55 @@
+.buttonMenu {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: white;
+}
+
+.navbar {
+    background-color: #54A4DE;
+    color: white;
+    height: 10%;
+
+    position: relative;
+}
+
+.menu {
+    width: 95%;
+    height: 70%;
+    position: absolute;
+
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+
+    bottom: -35%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-inline: 2.5%;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.profile p {
+    margin: 0;
+}

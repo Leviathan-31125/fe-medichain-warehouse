@@ -1,0 +1,17 @@
+.cardSo {
+    width: 40%;
+}
+
+.cardCustomer {
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+    .cardSo {
+        width: 100%;
+    }
+    
+    .cardCustomer {
+        width: 100%;
+    }
+}

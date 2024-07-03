@@ -1,0 +1,91 @@
+.sideBar {
+    width: 15%;
+    height: 100vh;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    text-wrap: wrap;
+
+    transition: width 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.sidebarMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    text-align: start;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+
+.sidebarMenu a {
+    text-decoration: none;
+    color: gray;
+}
+
+.sidebarMenu a:hover {
+    color: #54A4DE;
+}
+
+.sidebarContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activeMenu {
+    padding-inline: 10px;
+    padding-block: 5px;
+    background-color: #54A4DE;
+    color: white;
+    border-radius: 12px;
+}
+
+.inactiveMenu {
+    padding-inline: 10px;
+}
+
+.logoutButton {
+    background-color: red;
+    color: white;
+    padding-block: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.logoutButton:hover {
+    background-color: rgb(246, 123, 123);
+}
+
+.logoutContainer {
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80%;
+    bottom: 5vh;
+}
+
+.sidebarHidden {
+    visibility: collapse;
+    width: 0%;
+    background-color: none;
+    padding: 0px;
+
+    transition: width 0.3s;
+    animation-timing-function: ease-in;
+}
+
+@media screen and (max-width: 710px) {
+    .sideBar{
+        visibility: collapse;
+        width: 0%;
+        background-color: none;
+        padding: 0px;
+    }
+}
