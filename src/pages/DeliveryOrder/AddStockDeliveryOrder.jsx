@@ -322,6 +322,7 @@ const AddStockDeliveryOrder = () => {
 
   useEffect(() => {
     getDataTempDOMST()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refresh])
 
   const renderHeader = (iconData) => {
